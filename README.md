@@ -1,6 +1,7 @@
 # Shopping cart
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/68992d1c-36d4-4a84-b177-00c1f64fbcb4/deploy-status)](https://gabriela-yan.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/caab4107-ef54-4c96-82d4-0385bbe482ec/deploy-status)](https://app.netlify.com/sites/gabriela-yan/deploys)
 
 
 Basic functionality of a shopping cart in vanilla js
