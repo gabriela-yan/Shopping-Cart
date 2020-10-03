@@ -14,6 +14,12 @@ function loadEventListeners() {
     // Remove courses from cart
     shoppingCart.addEventListener('click', deleteCourse);
 
+    // Show courses of localStorage
+    document.addEventListener('DOMContentLoaded', () => {
+        articlesCar = JSON.parse(localStorage.getItem('shoppingCar') || []);
+        shoppingCartHTML();
+    })
+
     // Empty cart
     emptyCarBtn.addEventListener('click', () => {
         // console.log('Vaciando carrito'); Debugger
@@ -110,6 +116,13 @@ function shoppingCartHTML() {
         // Add the HTML of cart in the label <tbody>
         containerCar.appendChild(row);
     });   
+
+    // Add shopping Car to Storage
+    syncStorage();
+}
+
+function syncStorage(){
+    localStorage.setItem('shoppingCar', JSON.stringify(articlesCar));
 }
 
 // Delete the courses of label <tbody> 
